@@ -10,6 +10,7 @@ export default function Layout({ children, isAdmin = false }) {
     await logout()
     navigate('/login')
   }
+  
 
   const navLink = (to, label) => (
     <Link
