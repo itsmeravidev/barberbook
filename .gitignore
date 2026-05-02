@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# env files - never commit real credentials
+.env
+.env.local
+.env.*.local
+
+# build output
+dist/
+
+# vite cache
+.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
