@@ -1,5 +1,6 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAuthStore } from '../store/authStore'
+import Logo from './Logo'
 
 const NAV = [
   { to: '/admin',          label: 'Home',     icon: 'grid_view'      },
@@ -20,7 +21,7 @@ export default function AdminLayout({ children }) {
     <div className="min-h-screen bg-background text-on-background font-body-md flex flex-col">
       {/* Header */}
       <header className="fixed top-0 w-full bg-white border-b-2 border-black flex items-center justify-between h-16 px-5 z-50">
-        <span className="text-xl font-black tracking-widest font-headline-lg">BarberBook</span>
+        <Logo />
         <div className="flex items-center gap-3">
           <button className="w-9 h-9 flex items-center justify-center text-black">
             <span className="material-symbols-outlined">notifications</span>

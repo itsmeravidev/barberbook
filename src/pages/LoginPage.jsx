@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { useAuthStore } from '../store/authStore'
+import Logo from '../components/Logo'
 
 export default function LoginPage() {
   const [email, setEmail]             = useState('')
@@ -35,7 +36,7 @@ export default function LoginPage() {
       {/* Top brand bar */}
       <div className="w-full max-w-[400px] mb-8">
         <div className="flex items-center justify-between border-b-2 border-black pb-4">
-          <span className="text-2xl font-black tracking-widest font-headline-lg">BARBERBOOK</span>
+          <Logo />
           <span className="font-label-caps text-label-caps text-on-surface-variant">Admin Portal</span>
         </div>
       </div>

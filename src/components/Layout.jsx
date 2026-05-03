@@ -1,5 +1,6 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAuthStore } from '../store/authStore'
+import Logo from './Logo'
 
 const ADMIN_LINKS = [
   { to: '/admin',          label: 'Dashboard'   },
@@ -24,11 +25,8 @@ export default function Layout({ children, isAdmin = false }) {
       {/* Header */}
       <header className="fixed top-0 w-full bg-white border-b-2 border-black flex justify-center items-center h-20 px-6 z-50">
         <div className="w-full max-w-[1200px] flex justify-between items-center">
-          <Link
-            to={isAdmin ? '/admin' : '/'}
-            className="text-2xl font-black text-black tracking-widest font-headline-lg select-none"
-          >
-            BARBERBOOK
+          <Link to={isAdmin ? '/admin' : '/'}>
+            <Logo />
           </Link>
 
           {isAdmin && user ? (
