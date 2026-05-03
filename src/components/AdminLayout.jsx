@@ -20,7 +20,7 @@ export default function AdminLayout({ children }) {
   return (
     <div className="min-h-screen bg-background text-on-background font-body-md flex flex-col">
       {/* Header */}
-      <header className="fixed top-0 w-full bg-white border-b-2 border-black flex items-center justify-between h-16 px-5 z-50">
+      <header className="fixed top-0 w-full bg-white border-b-2 border-black flex items-center justify-between h-20 px-5 z-50">
         <Logo />
         <div className="flex items-center gap-3">
           <button className="w-9 h-9 flex items-center justify-center text-black">
